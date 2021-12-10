@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images\formula.png">
+	<link rel="stylesheet" type = "text/css" href="css/html5reset.css">
+	<link rel="stylesheet" type = "text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap">
+    <link href="css/formStyle.css" rel="stylesheet">  
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTQ8FZ0XYW"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WTQ8FZ0XYW');
+        </script>
+	<title>Contact Us</title>
+</head>
+<body>
+	<a class = "skip" href="#skip">Skip to Main Content</a>
+	<header>
+		<img src="images/logo.png" alt="f1 logo" id = "logo">
+		<nav>
+			<ul class="nav_links">
+				<li><a href = "index.html">Calendar</a></li>
+				<li><a href = "grid.html">The Grid</a></li>
+				<li><a href = "clasification.html">Clasification</a></li>
+				<li><a href = "2022.html">Future</a></li>
+                <li class="current"><a href = "contactus.html">Contact Us</a></li>
+
+			</ul>
+		</nav>
+	</header>
+	<main id = skip>
+		<h1>Please fill this form</h1>
+        <form action="https://formspree.io/f/mdoyrrjo" method="POST" id="form">
+            <fieldset class="name">
+            <fieldset>
+                <legend>Your details</legend>
+                <ol>
+                    <li>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder=" To refer to you" required autofocus>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder=" Example@domain.com" required>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <input id="message" name="message" type="mes"  placeholder=" What's happening? " required>
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <button type=submit>Send it!</button>
+            </fieldset>
+        </form>
+        </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
+    <script src="js/form.js"></script>
+
+    <footer>
+		<p>Sergio Ferreras &copy; 2021</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,391 @@
+body{
+	margin:10px;
+	padding:10px;
+	font-size: 20px;
+	font-family: 'Exo', sans-serif;
+	background-color: #fdfcfc;
+	animation: transitionIn 1s;
+}
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateX(0)
+	}
+	
+}
+
+a.skip{
+    background: deeppink;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -50px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header li a{
+	text-decoration: none; /*this is so that the links in the navbar are not underlined*/
+}
+img[src="images/logo.png"]{
+	width:7em; 
+	height:2em;
+}
+
+img[src="images/logo2.png"]{
+	animation-duration: 2s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	width: 50%;
+}
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 50%;
+	}
+	
+	to {
+		font-size: 100%;
+		margin-left: 0%;
+		width: 50%;
+	}
+  }
+h1{ 
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2{ 
+	font-size: x-large;
+	font-weight: bold;
+	text-align: left;
+}
+
+#saudi {
+	border: 5px solid #C5FB77;
+	height:auto;
+	float: left;
+	width: 50%;
+  }
+
+#uae {
+	border: 5px solid #C5FB77;
+	height: auto;
+	float: right;
+	width: 50%;
+  }
+
+#lastraces{
+	display: flex;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+img{
+	display: block;
+	filter: grayscale(100%);
+}
+
+p, h1, h2 {
+    padding: 10px;
+	color:black;
+	line-height: 1.5;
+}
+img[src="images/fta.jpg"]{
+	
+	filter: grayscale(0%) !important;
+}
+video{
+	display: block;
+	margin:auto;
+	height: 200px;
+	width: 300px;
+}
+header, nav, main, h1, footer{
+	margin: 10px 0px;
+	width: 100%;
+}
+nav li{
+	background-color:  #C5FB77;
+	padding:10px;
+	width:100%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+nav{
+	position: sticky;
+}
+
+.nav_links{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+  }
+
+nav li:hover {
+	font-style: italic;
+	text-transform: uppercase;
+	background-color: #94faaf;
+}
+
+a{
+	text-decoration: underline;
+	color: black;
+}
+
+
+nav .current{
+	text-transform: uppercase;
+	font-style: italic;
+	background-color: #74ff99;
+}
+
+.container{
+	display: grid;
+	padding: 20px;
+	grid-template-columns: auto;
+	text-align: center;
+	background-color: #fdfcfc;
+}
+
+.container > div{
+   overflow: hidden;
+} 
+
+.grid-container {
+	display: grid;
+	padding: 10px;
+	align-content: center;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	background-color: #fdfcfc;
+}
+
+.grid-container > div {
+	text-align: center;
+	padding: 10px ;
+	font-size: 15px;
+}
+img[src="images/Graham_Hill.jpg"]{
+	width: 100%;
+	height: 100%;
+}
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	perspective: 1000px;
+  }
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner, 
+  .flip-card:focus-within .flip-card-inner, 
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
+	transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  .flip-card-front {
+	background-color: rgb(255, 178, 127);
+	color: black;
+	font-size: 150px;
+  }
+  .flip-card-back {
+	background-color: rgb(255, 0, 128);
+	color: black;
+	transform: rotateY(180deg);
+  }
+
+.colhead{
+	background-color:rgb(255, 0, 128);
+	padding: 10px;
+	color: black;
+}
+table{
+	width: 90%;
+}
+table,td,th{
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+th, td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+caption{
+	color: black;
+	font-weight: 900;
+}
+tr:nth-child(odd) {
+	background-color:rgb(255, 0, 128);
+	color: black;
+  }
+  tr:nth-child(even) {
+	background-color:rgb(255, 178, 127);
+	color:black;
+  }
+
+  footer{
+	  bottom:0;
+	  width:100%;
+	  text-align: center;
+	  min-height: 30px;
+	  background-color:#C5FB77;
+  }
+  .parallax {
+	background-image: url("../images/mcl35.jpg");
+  
+	min-height: 350px; 
+  
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+
+img[src="images/F1 2022.jpg"]{
+	padding-bottom: 10px;
+}
+img[src="images/calendar2022.jpg"]{
+	padding-bottom: 10px;
+}
+
+  @media screen and (min-width: 760px) {
+	.nav_links{  
+		flex-direction: row;
+	  }  
+	.container{
+		grid-template-columns: auto auto;
+	}
+	.grid-container{
+		grid-template-columns: auto auto;
+	}
+	.flip-card-front{
+		font-size: 150px;
+	}
+	  
+	.row {
+		display: flex;
+		margin-left:-5px;
+		margin-right:-5px;
+	} 
+	.column {
+		flex: 50%;
+		padding: 5px;
+	}
+	img[src="images/F1 2022.jpg"]{
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 30px;
+		width: 50%;
+	}
+	img[src="images/calendar2022.jpg"]{
+		float: right;
+		margin-left: 30px;
+		margin-bottom: 30px;
+		width: 70%;
+	}
+  }
+
+  @media screen and (min-width: 1120px) {
+
+	.nav_links{ 
+		flex-direction: row;
+	  }
+	.container{
+		grid-template-columns: auto auto auto auto auto;
+	}
+	.grid-container{
+		grid-template-columns: auto auto auto auto;
+	}
+	.flip-card-front{
+		font-size: 200px;
+	}
+	
+	  /*the "*, .row, .column" code from here displays the two tables side by side*/
+	* {
+		box-sizing: border-box;
+	}
+	.row {
+		display: flex;
+		margin-left:-5px;
+		margin-right:-5px;
+	} 
+	.column {
+		flex: 50%;
+		padding: 5px;
+	}
+	img[src="images/F1 2022.jpg"]{
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 30px;
+		width: 40%;
+	}
+	img[src="images/calendar2022.jpg"]{
+		float: right;
+		margin-left: 30px;
+		margin-bottom: 30px;
+		width: 60%;
+	}
+  }
+  @media (prefers-reduced-motion: reduce) {
+		img[src="images/logo2.png"] {
+		animation: none;
+		}
+		body{
+				animation: none;
+				transition: none;
+		}
+		a{
+			transition:none;
+		}	
+		.flip-card-inner {
+			transition: none;
+		}
+		html{
+			scroll-behavior: auto; 
+		}
+		.skip a{
+		  -webkit-transition: initial; 
+		  transition: initial; 
+		}
+		.parallax{
+		  background-attachment: initial;
+		}
+	}
+
